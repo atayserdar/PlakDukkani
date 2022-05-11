@@ -1,0 +1,8 @@
+﻿<!-- Cart Button -->
+@model int 
+    <p>
+        <span class="icon-shopping-cart"></span>
+        <a asp-action="Index" asp-controller="Cart">
+            <span class="quantity">@Model</span>
+        </a>
+    </p>

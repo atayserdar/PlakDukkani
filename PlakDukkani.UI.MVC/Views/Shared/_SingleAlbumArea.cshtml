@@ -1,0 +1,32 @@
+﻿@model List<SingleAlbumVM>
+
+<div class="row">
+
+    @foreach (SingleAlbumVM item in Model)
+    {
+        <!-- Single Album Area -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                <div class="album-thumb">
+                    <img src="~/@item.AlbumArtUrl" alt="">       
+
+
+                    <!-- Album Price -->
+                    <div class="album-price">
+                        <p>@item.Price ₺</p>
+                    </div>
+                    <!-- Play Icon -->
+                    <div class="play-icon">
+                        <a asp-action="AlbumDetail" asp-controller="Home" asp-route-id="@item.ID"  class="video--play--btn"><span class="icon-zoom-in"></span></a>
+                    </div>
+                </div>
+                <div class="album-info">
+                    <a href="#">
+                        <h5>@item.Title</h5>
+                    </a>
+                    <p>@item.FullName</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

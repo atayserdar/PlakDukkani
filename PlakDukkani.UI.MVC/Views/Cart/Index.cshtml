@@ -1,0 +1,73 @@
+﻿
+
+@model Cart
+
+@{
+    ViewData["Title"] = "CartIndex";
+}
+
+
+<section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/bg-4.jpg); height:100vh;">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 m-5">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Discount</th>
+                            <th>SubTotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData">
+                        <partial name="_cartTable" model="@Model" />
+                    </tbody>                 
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@section scripts {
+    <script>
+        function CartUpdate(cartId, value) {
+            $.ajax({
+                type: "GET",
+                url: "/Cart/UpdateToCart",
+                data: {
+                    id: cartId,
+                    quantity: value
+                }
+            })
+                .done(function (cartTablePartial) {
+                    console.log("istek basarılı");
+                    console.log(cartTablePartial);
+                    $("#tableData").html(cartTablePartial);
+                    let totalQuantity = $("#Totalquantity").val();
+                    $(".quantity").text(totalQuantity)
+                });
+        }
+
+        function CartDelete(cartId) {
+            var cvp = confirm("Albumu silmek istiyor musunuz ?")
+            if (cvp) {
+                $.ajax({
+                    type: "GET",
+                    url: "/Cart/DeleteToCart",
+                    data: { id: cartId },
+                    success: function (data) {
+                        $("#tableData").html(data);
+                        let totalQuantity = $("#Totalquantity").val();
+                        $(".quantity").text(totalQuantity)
+                    }
+                });
+            }
+        }
+
+    </script>
+}

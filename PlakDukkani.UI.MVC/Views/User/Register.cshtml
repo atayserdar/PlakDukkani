@@ -1,0 +1,76 @@
+﻿@model UserCreateVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section class="breadcumb-area bg-img bg-overlay" style="background-image: url(../../img/bg-img/breadcumb3.jpg);">
+    <div class="bradcumbContent">
+        <p>See what’s new</p>
+        <h2>Login</h2>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+<!-- ##### Login Area Start ##### -->
+<section class="login-area section-padding-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="login-content">
+                    <h3>Welcome</h3>
+                    <!-- Login Form -->
+                    <div class="login-form">
+
+                        <form asp-action="Register" asp-controller="User" method="post">
+
+                            <div class="form-group">
+                                <label asp-for="FirstName"></label>
+                                <input asp-for="FirstName" class="form-control">
+                                <span asp-validation-for="FirstName" class="form-text text-muted"></span>
+                            </div>
+                            <div class="form-group">
+
+                                <label asp-for="LastName"></label>
+                                <input asp-for="LastName" class="form-control">
+                                <span asp-validation-for="LastName" class="form-text text-muted"></span>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="form-control">
+                                <span asp-validation-for="Email" class="form-text text-muted"></span>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="form-control">
+                                <span asp-validation-for="Password" class="form-text text-muted"></span>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label asp-for="PhoneNumber">Phone Number</label>
+                                <input asp-for="PhoneNumber" class="form-control">
+                                <span asp-validation-for="PhoneNumber" class="form-text text-muted"></span>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label asp-for="Address"></label>
+                                <input asp-for="Address" class="form-control">
+                                <span asp-validation-for="Address" class="form-text text-muted"></span>
+                            </div>
+
+                            <button type="submit" class="btn oneMusic-btn mt-30">Register</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Login Area End ##### -->

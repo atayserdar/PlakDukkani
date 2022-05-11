@@ -1,0 +1,236 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\animate.css" />
+    <Content Remove="wwwroot\css\audioplayer.css" />
+    <Content Remove="wwwroot\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\css\classy-nav.css" />
+    <Content Remove="wwwroot\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\css\magnific-popup.css" />
+    <Content Remove="wwwroot\css\one-music-icon.css" />
+    <Content Remove="wwwroot\css\owl.carousel.min.css" />
+    <Content Remove="wwwroot\fonts\classy.eot" />
+    <Content Remove="wwwroot\fonts\classy.svg" />
+    <Content Remove="wwwroot\fonts\classy.ttf" />
+    <Content Remove="wwwroot\fonts\classy.woff" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\fonts\icomoon.eot" />
+    <Content Remove="wwwroot\fonts\icomoon.svg" />
+    <Content Remove="wwwroot\fonts\icomoon.ttf" />
+    <Content Remove="wwwroot\fonts\icomoon.woff" />
+    <Content Remove="wwwroot\img\bg-img\a1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a10.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a11.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a12.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a5.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a6.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a7.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a8.jpg" />
+    <Content Remove="wwwroot\img\bg-img\a9.jpg" />
+    <Content Remove="wwwroot\img\bg-img\add.gif" />
+    <Content Remove="wwwroot\img\bg-img\add2.gif" />
+    <Content Remove="wwwroot\img\bg-img\add3.gif" />
+    <Content Remove="wwwroot\img\bg-img\b1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\b2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\b3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\b4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\bg-1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\bg-2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\bg-3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\bg-4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\blog1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\blog2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\blog3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\breadcumb.jpg" />
+    <Content Remove="wwwroot\img\bg-img\breadcumb2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\breadcumb3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e5.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e6.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e7.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e8.jpg" />
+    <Content Remove="wwwroot\img\bg-img\e9.jpg" />
+    <Content Remove="wwwroot\img\bg-img\fa.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa5.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa6.jpg" />
+    <Content Remove="wwwroot\img\bg-img\pa7.jpg" />
+    <Content Remove="wwwroot\img\bg-img\s1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\s2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\s3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\s4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\t1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt1.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt10.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt11.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt12.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt2.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt3.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt4.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt5.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt6.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt7.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt8.jpg" />
+    <Content Remove="wwwroot\img\bg-img\wt9.jpg" />
+    <Content Remove="wwwroot\img\core-img\favicon.ico" />
+    <Content Remove="wwwroot\img\core-img\logo.png" />
+    <Content Remove="wwwroot\js\active.js" />
+    <Content Remove="wwwroot\js\bootstrap\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\bootstrap\popper.min.js" />
+    <Content Remove="wwwroot\js\jquery\jquery-2.2.4.min.js" />
+    <Content Remove="wwwroot\js\plugins\plugins.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="one-music\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\style.scssc" />
+    <None Include="one-music\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_fonts.scssc" />
+    <None Include="one-music\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_mixin.scssc" />
+    <None Include="one-music\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_responsive.scssc" />
+    <None Include="one-music\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_theme_color.scssc" />
+    <None Include="one-music\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\style.scssc" />
+    <None Include="one-music\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_mixin.scssc" />
+    <None Include="one-music\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_responsive.scssc" />
+    <None Include="one-music\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_theme_color.scssc" />
+    <None Include="one-music\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_variables.scssc" />
+    <None Include="one-music\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\style.scssc" />
+    <None Include="one-music\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_mixin.scssc" />
+    <None Include="one-music\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_responsive.scssc" />
+    <None Include="one-music\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_theme_color.scssc" />
+    <None Include="one-music\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_variables.scssc" />
+    <None Include="one-music\.sass-cache\d85c8cf619ac1df897d554b9bf37f413df87287f\style.scssc" />
+    <None Include="one-music\.sass-cache\d85c8cf619ac1df897d554b9bf37f413df87287f\_fonts.scssc" />
+    <None Include="one-music\.sass-cache\d85c8cf619ac1df897d554b9bf37f413df87287f\_mixin.scssc" />
+    <None Include="one-music\.sass-cache\d85c8cf619ac1df897d554b9bf37f413df87287f\_responsive.scssc" />
+    <None Include="one-music\.sass-cache\d85c8cf619ac1df897d554b9bf37f413df87287f\_theme_color.scssc" />
+    <None Include="wwwroot\css\animate.css" />
+    <None Include="wwwroot\css\audioplayer.css" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\classy-nav.css" />
+    <None Include="wwwroot\css\font-awesome.min.css" />
+    <None Include="wwwroot\css\magnific-popup.css" />
+    <None Include="wwwroot\css\one-music-icon.css" />
+    <None Include="wwwroot\css\owl.carousel.min.css" />
+    <None Include="wwwroot\fonts\classy.eot" />
+    <None Include="wwwroot\fonts\classy.svg" />
+    <None Include="wwwroot\fonts\classy.ttf" />
+    <None Include="wwwroot\fonts\classy.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\icomoon.eot" />
+    <None Include="wwwroot\fonts\icomoon.svg" />
+    <None Include="wwwroot\fonts\icomoon.ttf" />
+    <None Include="wwwroot\fonts\icomoon.woff" />
+    <None Include="wwwroot\img\bg-img\a1.jpg" />
+    <None Include="wwwroot\img\bg-img\a10.jpg" />
+    <None Include="wwwroot\img\bg-img\a11.jpg" />
+    <None Include="wwwroot\img\bg-img\a12.jpg" />
+    <None Include="wwwroot\img\bg-img\a2.jpg" />
+    <None Include="wwwroot\img\bg-img\a3.jpg" />
+    <None Include="wwwroot\img\bg-img\a4.jpg" />
+    <None Include="wwwroot\img\bg-img\a5.jpg" />
+    <None Include="wwwroot\img\bg-img\a6.jpg" />
+    <None Include="wwwroot\img\bg-img\a7.jpg" />
+    <None Include="wwwroot\img\bg-img\a8.jpg" />
+    <None Include="wwwroot\img\bg-img\a9.jpg" />
+    <None Include="wwwroot\img\bg-img\add.gif" />
+    <None Include="wwwroot\img\bg-img\add2.gif" />
+    <None Include="wwwroot\img\bg-img\add3.gif" />
+    <None Include="wwwroot\img\bg-img\b1.jpg" />
+    <None Include="wwwroot\img\bg-img\b2.jpg" />
+    <None Include="wwwroot\img\bg-img\b3.jpg" />
+    <None Include="wwwroot\img\bg-img\b4.jpg" />
+    <None Include="wwwroot\img\bg-img\bg-1.jpg" />
+    <None Include="wwwroot\img\bg-img\bg-2.jpg" />
+    <None Include="wwwroot\img\bg-img\bg-3.jpg" />
+    <None Include="wwwroot\img\bg-img\bg-4.jpg" />
+    <None Include="wwwroot\img\bg-img\blog1.jpg" />
+    <None Include="wwwroot\img\bg-img\blog2.jpg" />
+    <None Include="wwwroot\img\bg-img\blog3.jpg" />
+    <None Include="wwwroot\img\bg-img\breadcumb.jpg" />
+    <None Include="wwwroot\img\bg-img\breadcumb2.jpg" />
+    <None Include="wwwroot\img\bg-img\breadcumb3.jpg" />
+    <None Include="wwwroot\img\bg-img\e1.jpg" />
+    <None Include="wwwroot\img\bg-img\e2.jpg" />
+    <None Include="wwwroot\img\bg-img\e3.jpg" />
+    <None Include="wwwroot\img\bg-img\e4.jpg" />
+    <None Include="wwwroot\img\bg-img\e5.jpg" />
+    <None Include="wwwroot\img\bg-img\e6.jpg" />
+    <None Include="wwwroot\img\bg-img\e7.jpg" />
+    <None Include="wwwroot\img\bg-img\e8.jpg" />
+    <None Include="wwwroot\img\bg-img\e9.jpg" />
+    <None Include="wwwroot\img\bg-img\fa.jpg" />
+    <None Include="wwwroot\img\bg-img\pa1.jpg" />
+    <None Include="wwwroot\img\bg-img\pa2.jpg" />
+    <None Include="wwwroot\img\bg-img\pa3.jpg" />
+    <None Include="wwwroot\img\bg-img\pa4.jpg" />
+    <None Include="wwwroot\img\bg-img\pa5.jpg" />
+    <None Include="wwwroot\img\bg-img\pa6.jpg" />
+    <None Include="wwwroot\img\bg-img\pa7.jpg" />
+    <None Include="wwwroot\img\bg-img\s1.jpg" />
+    <None Include="wwwroot\img\bg-img\s2.jpg" />
+    <None Include="wwwroot\img\bg-img\s3.jpg" />
+    <None Include="wwwroot\img\bg-img\s4.jpg" />
+    <None Include="wwwroot\img\bg-img\t1.jpg" />
+    <None Include="wwwroot\img\bg-img\wt1.jpg" />
+    <None Include="wwwroot\img\bg-img\wt10.jpg" />
+    <None Include="wwwroot\img\bg-img\wt11.jpg" />
+    <None Include="wwwroot\img\bg-img\wt12.jpg" />
+    <None Include="wwwroot\img\bg-img\wt2.jpg" />
+    <None Include="wwwroot\img\bg-img\wt3.jpg" />
+    <None Include="wwwroot\img\bg-img\wt4.jpg" />
+    <None Include="wwwroot\img\bg-img\wt5.jpg" />
+    <None Include="wwwroot\img\bg-img\wt6.jpg" />
+    <None Include="wwwroot\img\bg-img\wt7.jpg" />
+    <None Include="wwwroot\img\bg-img\wt8.jpg" />
+    <None Include="wwwroot\img\bg-img\wt9.jpg" />
+    <None Include="wwwroot\img\core-img\favicon.ico" />
+    <None Include="wwwroot\img\core-img\logo.png" />
+    <None Include="wwwroot\js\active.js" />
+    <None Include="wwwroot\js\bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\js\bootstrap\popper.min.js" />
+    <None Include="wwwroot\js\jquery\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\js\plugins\plugins.js" />
+    <None Include="wwwroot\style.css" />
+    <None Include="wwwroot\style.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlakDukkani.BLL\PlakDukkani.BLL.csproj" />
+    <ProjectReference Include="..\PlakDukkani.ViewModel\PlakDukkani.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

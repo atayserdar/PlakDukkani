@@ -1,0 +1,16 @@
+﻿@model Cart
+
+<input type="hidden" id="Totalquantity"  value="@Model.TotalQuantity">
+@foreach (var item in Model.GetCartItems)
+{
+    <tr>
+        <td>@item.Title</td>
+        <td>@item.Price.ToString("C2")</td>
+        <td><input onchange="CartUpdate(@item.ID, this.value)" type="number" value="@item.Quantity" min="0" /></td>
+        <td>@(item.Discount == 0 ? "İndirim Yok" : item.Discount) </td>
+        <td>
+            @item.SubTotal
+        </td>
+        <td><a href="Javascript:void(0)" class="btn oneMusic-btn m-2" onclick="CartDelete(@item.ID)">DELETE</a></td>
+    </tr>
+}
